@@ -24,7 +24,7 @@ val file :
 val debug : bool ref
 
 (** The original tree-sitter parser. *)
-val ts_parser : Tree_sitter_bindings.Tree_sitter_API.ts_parser
+val ts_parser : Tree_sitter_bindings.Tree_sitter_API.ts_parser Domain.DLS.key
 
 (** Create a new tree-sitter parser (thread-safe). *)
 val create_parser : unit -> Tree_sitter_bindings.Tree_sitter_API.ts_parser
